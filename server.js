@@ -91,6 +91,14 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
+app.get('/info', function (req, res) {
+  
+    res.send(process.version);
+  
+});
+
+
+
 // error handling
 app.use(function(err, req, res, next){
   console.error(err.stack);
